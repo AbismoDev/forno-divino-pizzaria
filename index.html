@@ -7,10 +7,439 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- FavIcon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icons/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/icons/favicons/site.webmanifest">
+
+    <script src="https://kit.fontawesome.com/8d1e25daaf.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     
+    <header>
+        <div class="container">
+            <img src="assets/img/logo--forno--divino.png" alt="logo do forno divino pizzaria">
+
+            <!-- MENU MOBILE -->
+             <div>
+                <button><i class="fa-solid fa-bars"></i></button>
+
+                <nav>
+                    <ul>
+                        <li><a href="#banner">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#cardapio">Cardápio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+             </div>
+
+             <!-- Menu Desktop -->
+            <nav>
+                <ul>
+                    <li><a href="#banner">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="banner">
+            <div class="container">
+                <div>
+                    <div>
+                        <h1>Forno Divino Pizzaria</h1>
+                        <p>
+                            A verdadeira pizza artesanal de são joão del-rei,<br>
+                            direto do forno a lenha para sua casa.
+                        </p>
+                    </div>
+                    <button>Ver Cardápio</button>
+                </div>
+                <div><!-- Container Banner --></div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="container">
+                <div>
+                    <div>
+                        <h2>Nossa Paixão pela Pizza</h2>
+                        <p>
+                            Desde 1997, a Forno Divino traz para São João del-Rei o sabor 
+                            autêntico da pizza artesanal. Usamos ingredientes frescos, massa de 
+                            fermentação natural e o calor do forno a lenha para criar pizzas 
+                            inesquecíveis.
+                        </p>
+                    </div>
+                    <div>
+                        <div><img src="assets/img/sobre-thumb-01_1.webp" alt="foto de gyoza com salada"></div>
+                        <div><img src="assets/img/sobre-thumb-02_1.webp" alt="foto de gyoza"></div>
+                        <div><img src="assets/img/sobre-thumb-03_1.webp" alt="foto de molho de tomate"></div>
+                    </div>
+                </div>
+                <div><!-- Banner dos produtos frescos --></div>
+            </div>
+        </section>
+
+        <section id="cardapio">
+            <div class="container">
+                <div>
+
+                    <h3>Cardápio Fogo Divino</h3>
+                    <div class="container--buttons">
+                        <div>
+                            <button>
+                                <img src="assets/img/icons/icone-categoria-1.png" alt="icone de garfo e faca">
+                                <span>Salgadas Clássicas</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button>
+                                <img src="assets/img/icons/icone-categoria-2.png" alt="icone de prato e talheres">
+                                <span>Salgads Especiais</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button>
+                                <img src="assets/img/icons/icone-categoria-3.png" alt="icone de um prato fumaçando">
+                                <span>Doces</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="container--menu">
+                        <div class="salgadas--classicas">
+
+                            <div class="card--pizzas--menu">
+                                <div class="card--image">
+                                    <img src="assets/img/pizzas/salgadas/margherita.webp" alt="Foto de uma Pizza de Margherita">
+                                </div>
+                                <div class="card--descricao">
+                                    <h4>Margherita</h4>
+                                    <p>
+                                        Molho de tomate italiano, mussarela fresca, manjericão e azeite.
+                                    </p>
+                                </div>
+                                <div class="card--extra">
+                                    <div class="card--preco">
+                                        <h5>R$ 45,00</h5>
+                                    </div>
+                                    <button><i class="fa-solid fa-cart-plus"></i> Adicionar ao Pedido</button>
+                                </div>
+                            </div>
+                            
+                            <div class="card--pizzas--menu">
+                                <div class="card--image">
+                                    <img src="assets/img/pizzas/salgadas/calabresa.webp" alt="Foto de uma Pizza de Calabresa">
+                                </div>
+                                <div class="card--descricao">
+                                    <h4>Calabresa</h4>
+                                    <p>
+                                        Molho de tomate, mussarela, calabresa fatiada e cebola.
+                                    </p>
+                                </div>
+                                <div class="card--extra">
+                                    <div class="card--preco">
+                                        <h5>R$ 48,00</h5>
+                                    </div>
+                                    <button><i class="fa-solid fa-cart-plus"></i> Adicionar ao Pedido</button>
+                                </div>
+                            </div>
+                            
+                            <div class="card--pizzas--menu">
+                                <div class="card--image">
+                                    <img src="assets/img/pizzas/salgadas/portuguesa.webp" alt="Foto de uma Pizza de Portuguesa">
+                                </div>
+                                <div class="card--descricao">
+                                    <h4>Portuguesa</h4>
+                                    <p>
+                                        Molho de tomate, mussarela, presunto, ovo, cebola, azeitona e pimentão.
+                                    </p>
+                                </div>
+                                <div class="card--extra">
+                                    <div class="card--preco">
+                                        <h5>R$ 52,00</h5>
+                                    </div>
+                                    <button><i class="fa-solid fa-cart-plus"></i> Adicionar ao Pedido</button>
+                                </div>
+                            </div>
+                            
+                            <div class="card--pizzas--menu">
+                                <div class="card--image">
+                                    <img src="assets/img/pizzas/salgadas/frango-catupiry.webp" alt="Foto de uma Pizza de Frango com Catupiry">
+                                </div>
+                                <div class="card--descricao">
+                                    <h4>Frango com Catupiry</h4>
+                                    <p>
+                                        Molho de tomate, mussarela, frango desfiado e catupiry original.
+                                    </p>
+                                </div>
+                                <div class="card--extra">
+                                    <div class="card--preco">
+                                        <h5>R$ 50,00</h5>
+                                    </div>
+                                    <button><i class="fa-solid fa-cart-plus"></i> Adicionar ao Pedido</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="salgadas--especiais">
+
+                            <div class="card--pizzas--menu">
+                                <div class="card--image">
+                                    <img src="assets/img/pizzas/salgadas especiais/moda-casa.webp" alt="Foto de uma Pizza de Moda da Casa">
+                                </div>
+                                <div class="card--descricao">
+                                    <h4>Forno Divino (Da Casa)</h4>
+                                    <p>
+                                        Molho de tomate, mussarela de búfala, tomate cereja, presunto parma e rúcula fresca.
+                                    </p>
+                                </div>
+                                <div class="card--extra">
+                                    <div class="card--preco">
+                                        <h5>R$ 65,00</h5>
+                                    </div>
+                                    <button><i class="fa-solid fa-cart-plus"></i> Adicionar ao Pedido</button>
+                                </div>
+                            </div>
+
+                            <div class="card--pizzas--menu">
+                                <div class="card--image">
+                                    <img src="assets/img/pizzas/salgadas especiais/quatro-queijos.webp" alt="Foto de uma Pizza de Quatro Queijos">
+                                </div>
+                                <div class="card--descricao">
+                                    <h4>Quatro Queijos</h4>
+                                    <p>
+                                        Molho de tomate, mussarela, provolone, parmesão e gorgonzola.
+                                    </p>
+                                </div>
+                                <div class="card--extra">
+                                    <div class="card--preco">
+                                        <h5>R$ 58,00</h5>
+                                    </div>
+                                    <button><i class="fa-solid fa-cart-plus"></i> Adicionar ao Pedido</button>
+                                </div>
+                            </div>
+
+                            <div class="card--pizzas--menu">
+                                <div class="card--image">
+                                    <img src="assets/img/pizzas/salgadas especiais/pepperoni.webp" alt="Foto de uma Pizza de Pepperoni">
+                                </div>
+                                <div class="card--descricao">
+                                    <h4>Pepperoni</h4>
+                                    <p>
+                                        Molho de tomate, mussarela e pepperoni especial.
+                                    </p>
+                                </div>
+                                <div class="card--extra">
+                                    <div class="card--preco">
+                                        <h5>R$ 60,00</h5>
+                                    </div>
+                                    <button><i class="fa-solid fa-cart-plus"></i> Adicionar ao Pedido</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="doces">
+
+                            <div class="card--pizzas--menu">
+                                <div class="card--image">
+                                    <img src="assets/img/pizzas/doces/chocolate-morango.webp" alt="Foto de uma Pizza de Chocolate com Morango">
+                                </div>
+                                <div class="card--descricao">
+                                    <h4>Chocolate com Morango</h4>
+                                    <p>
+                                        Brigadeiro cremoso, morangos frescos e granulado.
+                                    </p>
+                                </div>
+                                <div class="card--extra">
+                                    <div class="card--preco">
+                                        <h5>R$ 40,00</h5>
+                                    </div>
+                                    <button><i class="fa-solid fa-cart-plus"></i> Adicionar ao Pedido</button>
+                                </div>
+                            </div>
+
+                            <div class="card--pizzas--menu">
+                                <div class="card--image">
+                                    <img src="assets/img/pizzas/doces/romeu-julieta.webp" alt="Foto de uma Pizza de Romeu & Julieta">
+                                </div>
+                                <div class="card--descricao">
+                                    <h4>Romeu & Julieta</h4>
+                                    <p>
+                                        Mussarela e goiabada cremosa.
+                                    </p>
+                                </div>
+                                <div class="card--extra">
+                                    <div class="card--preco">
+                                        <h5>R$ 38,00</h5>
+                                    </div>
+                                    <button><i class="fa-solid fa-cart-plus"></i> Adicionar ao Pedido</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="container--botoes--cardapio">
+                        <button>Ver Perdidos</button>
+                        <button>Finalizar Pedidos</button>
+                    </div>
+
+                    <!-- Modal Pedidos -->
+                     <div id="container--modal" class="container--modal">
+                        <header>
+                            <h4><i class="fa-solid fa-cart-shopping"></i> Carrinho</h4>
+                            <div id="close--modal" class="close--modal">
+                                <button>X</button>
+                            </div>
+                        </header>
+
+                        <!-- Container conteudo modal -->
+                        <div>
+
+                            <div class="card--pizzas--menu">
+                                <div class="card--image">
+                                    <img src="assets/img/pizzas/doces/chocolate-morango.webp" alt="Foto de uma Pizza de Chocolate com Morango">
+                                </div>
+                                <div class="card--descricao">
+                                    <h4>Chocolate com Morango</h4>
+                                    <p>
+                                        Brigadeiro cremoso, morangos frescos e granulado.
+                                    </p>
+                                </div>
+                                <div class="card--extra">
+                                    <div>
+                                        <button><i class="fa-solid fa-circle-minus"></i></button>
+                                        <span>1</span>
+                                        <button><i class="fa-solid fa-circle-plus"></i></button>
+                                    </div>
+                                    <div>
+                                        <button><i class="fa-solid fa-trash"></i> Excluir</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card--pizzas--menu">
+                                <div class="card--image">
+                                    <img src="assets/img/pizzas/doces/chocolate-morango.webp" alt="Foto de uma Pizza de Chocolate com Morango">
+                                </div>
+                                <div class="card--descricao">
+                                    <h4>Chocolate com Morango</h4>
+                                    <p>
+                                        Brigadeiro cremoso, morangos frescos e granulado.
+                                    </p>
+                                </div>
+                                <div class="card--extra">
+                                    <div>
+                                        <button><i class="fa-solid fa-circle-minus"></i></button>
+                                        <span>1</span>
+                                        <button><i class="fa-solid fa-circle-plus"></i></button>
+                                    </div>
+                                    <div>
+                                        <button><i class="fa-solid fa-trash"></i> Excluir</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card--pizzas--menu">
+                                <div class="card--image">
+                                    <img src="assets/img/pizzas/doces/chocolate-morango.webp" alt="Foto de uma Pizza de Chocolate com Morango">
+                                </div>
+                                <div class="card--descricao">
+                                    <h4>Chocolate com Morango</h4>
+                                    <p>
+                                        Brigadeiro cremoso, morangos frescos e granulado.
+                                    </p>
+                                </div>
+                                <div class="card--extra">
+                                    <div>
+                                        <button><i class="fa-solid fa-circle-minus"></i></button>
+                                        <span>1</span>
+                                        <button><i class="fa-solid fa-circle-plus"></i></button>
+                                    </div>
+                                    <div>
+                                        <button><i class="fa-solid fa-trash"></i> Excluir</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- container botoes finalizar pedido-->
+                        <div>
+                            <button><i class="fa-solid fa-circle-check"></i> Finalizar Pedido</button>
+                        </div>
+                     </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Falta fazer a seção de contato e o rodape -->
+         <section id="contato">
+            <div class="container">
+                <header>
+                    <div><!-- Div de traço --></div>
+                    <h4>Faça seu pedido</h4>
+                    <h2>Fácil e Rápido pelo WhatsApp!</h2>
+                    <p>Confira nosso horário de funcionamento e entre em contato para pedir sua pizza Forno Divino.</p>
+                </header>
+
+                <div>
+                    <div>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <div>
+                            <h4>Telefone</h4>
+                            <div>
+                                <a href="tel:+55999999999">(32) 99999-9999</a>
+                                <a href="tel:+55999999999">(32) 99999-9999</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <div>
+                            <h4>E-mails</h4>
+                            <div>
+                                <a href="mailto:pedido@fornodivinopizzaria.com">pedido@fornodivinopizzaria.com</a>
+                                <a href="mailto:contato@fornodivinopizzaria.com">contato@fornodivinopizzaria.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+         </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div>
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+            <div>
+                <p>&copy; 2025 - Todos os direitos reservados a Forno Divino Pizzaria.</p>
+            </div>
+        </div>
+    </footer>
 
     <script type="module" src="assets/js/main.js"></script>
+    
 </body>
 </html>
