@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font--family--primaria: "Poppins", sans-serif;
+    --font--family--secundaria: "Open Sans", sans-serif;
+    --font--size--titulo: 32px;
+    --font--size--subtitulo: 26px;
+    --font--size--texto: 16px;
+
+    --cor--primaria: #E63946;
+    --cor--secundaria: #F4A261;
+    --cor--texto: #4F372D;
+    --fundo--whatsapp: #4FCE5D;
+    --fundo--principal: #FDF0D5;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background-color: var(--cor--secundaria);
+    color: var(--fundo--principal);
+}
+
+body {
+    background-color: var(--fundo--principal);
+}
+
+/* UI KIT */
+
+.container {
+    /* border: 1px solid red; */
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    width: 100%;
+}
+
+.titulo,
+.subtitulo {
+    font-family: var(--font--family--primaria);
+}
+
+.titulo {
+    font-size: var(--font--size--titulo);
+}
+
+.subtitulo {
+    font-size: var(--font--size--subtitulo);
+}
+
+.texto {
+    font-family: var(--font--family--secundaria);
+    font-size: var(--font--size--texto);
+    color: var(--cor--texto);
+}
+
+.link {
+    font-family: var(--font--family--secundaria);
+    font-size: var(--font--size--texto);
+    color: var(--cor--texto);
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.link:hover {
+    color: var(--cor--primaria);
+}
+
+.btn {
+    background-color: transparent;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: .3s;
+    border: none;
+}
+
+.btn:hover {
+    transform: scale(.9555);
+}
+
+.btn--primario {
+    background-color: var(--cor--primaria);
+    color: var(--fundo--principal) !important;
+    padding-right: 20px;
+    border-radius: 4px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.btn--primario:active {
+    background-color: var(--cor--secundaria) !important;
+}
+
+.btn--secundario {
+    background-color: var(--cor--secundaria);
+    color: var(--fundo--principal) !important;
+    padding-right: 20px;
+    border-radius: 4px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.btn--secundario:active {
+    background-color: var(--cor--primaria) !important;
+}
+
+.btn--whatsapp {
+    background-color: var(--fundo--whatsapp);
+    color: var(--fundo--principal) !important;
+    padding-right: 20px;
+    border-radius: 4px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.secao {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+/* FIM DO UI KIT */
+
+@media (min-width: 300px) {
+
+    :root {
+        --font--size--titulo: 28px;
+        --font--size--subtitulo: 22px;
+        --font--size--texto: 14px;
+    }
+
+    /* TOPO */
+    .topo .container {
+        justify-content: space-between;    
+        padding-bottom: 20px;
+        align-items: center;
+        position: relative;
+        padding-top: 20px;
+        display: flex;
+    }
+
+    .topo img {
+        width: 80px;
+    }
+
+    .topo .menu--mobile {
+        background-color: var(--cor--primaria);
+        position: absolute;
+        display: none;
+        width: 100%;
+        top: 92px;
+        left: 0;
+    }
+
+    .topo .menu--ativo { 
+        display: flex;
+    }
+
+    .topo .menu--mobile ul {
+        flex-direction: column;
+        text-align: center;
+        list-style: none;
+        display: flex;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .topo .menu--mobile ul li {
+        border-top: 1px solid var(--fundo--principal);
+        align-items: center;
+        padding: 14px 0;
+        display: flex;
+        width: 100%;
+    }
+
+    .topo .menu--mobile ul li:first-child {
+        border-top: none;
+    }
+
+    .topo .menu--mobile .link {
+        color: var(--fundo--principal);
+        width: 100%;
+    }
+
+    .topo .btn--menu {
+        background-color: var(--cor--primaria);
+        color: var(--cor--secundaria);
+        border-radius: 6px;
+        font-size: 20px;
+    }
+
+    .topo .menu--desktop {
+        display: none;
+    }
+
+    /* FIM DO TOPO */
+
+    /* SEÇÃO BANNER */
+    .secao--banner .container{
+        padding: 0;
+    }
+
+    .secao--banner .banner--texto {
+        background-image: url('../img/banner-esquerda_1.webp');
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        height: 60vh;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .secao--banner .texto--banner {
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        gap: 10px;
+    }
+
+    .secao--banner .texto--banner .titulo,
+    .secao--banner .texto--banner .texto {
+        color: var(--fundo--principal);
+        text-transform: uppercase;
+    }
+
+    .secao--banner .btn {
+        text-decoration: none;
+    }
+
+    .secao--banner .banner--image {
+        display: none;
+    }
+
+    /* FIM DA SEÇÃO BANNER */
+
+    /* SEÇÃO SOBRE */
+    .secao--sobre .container--sobre--conteudo {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .secao--sobre .texto--sobre {
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+    }
+
+    .secao--sobre .texto--sobre .subtitulo {
+        color: var(--cor--texto);
+    }
+
+    .secao--sobre .imagens--sobre {
+        justify-content: space-between;
+        display: flex;
+        gap: 10px;
+    }
+
+    .secao--sobre .imagens--sobre img {
+        width: 30%;
+    }
+
+    .secao--sobre .container--sobre--imagem {
+        display: none;
+    }
+
+    /* FIM DA SEÇÃO SOBRE */
+
+    /* SEÇÃO CARDÁPIO */
+    .secao--cardapio .container--cardapio {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        gap: 30px;
+    }
+
+    .secao--cardapio .subtitulo {
+        color: var(--cor--texto);
+    }
+
+    .secao--cardapio .container--buttons {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+    }
+
+    .secao--cardapio .container--buttons button {
+        width: 30%;
+    }
+
+    .secao--cardapio .conteudo--cardapio {
+        position: relative;
+    }
+
+    .secao--cardapio .salgadas--classicas,
+    .secao--cardapio .salgadas--especiais,
+    .secao--cardapio .doces {
+        flex-direction: column;
+        display: none;
+        gap: 24px;
+    }
+
+    .secao--cardapio .salgadas--classicas{
+        display: flex;
+    }
+
+    .secao--cardapio .card--pizzas--menu {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        gap: 12px;
+    }
+
+    .secao--cardapio .card--image img{
+        width: 100%;
+    }
+
+    .secao--cardapio .card--descricao {
+        text-align: center;
+    }
+
+    .secao--cardapio .card--extra {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        gap: 8px;
+    }
+
+    .secao--cardapio .card--preco {
+        background-color: var(--cor--primaria);
+        padding-bottom: 10px;
+        border-radius: 4px;
+        text-align: center;
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .secao--cardapio .card--preco .subtitulo{
+        color: var(--fundo--principal);
+    }
+
+    .secao--cardapio .card--extra .btn--secundario {
+        padding-bottom: 12px;
+        padding-top: 12px;
+    }
+
+    .secao--cardapio .container--botoes--cardapio {
+        display: flex;
+        gap: 10px;
+    }
+
+    /* FIM DA SEÇÃO CARDÁPIO */
+
+    /* MODAL */
+    .container--modal {
+        box-shadow: 0 0 10px 2px var(--cor--texto);
+        background-color: var(--fundo--principal);
+        border: 2px solid var(--cor--secundaria);
+        flex-direction: column;
+        position: absolute;
+        padding: 54px 2%;
+        display: none;
+        top: 960px;
+        width: 96%;
+        gap: 64px;
+    }
+
+    .container--modal .cabecalho--modal {
+        justify-content: center;
+        align-items: flex-end;
+        display: flex;
+    }
+
+    .container--modal .close--modal {
+        position: absolute;
+        right: 10px;
+        top: 14px;
+    }
+
+    .container--modal .conteudo--modal {
+        flex-direction: column;
+        display: flex;
+        gap: 24px;
+    }
+
+    .container--modal .card--adiciona--remove--item {
+        border: 2px solid var(--cor--secundaria);
+        border-radius: 24px;
+    }
+
+    .container--btn--whatsapp {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+
+    /* FIM DO MODAL */
+
+    /* SEÇÃO CONTATO */
+    .secao--contato {
+        background-image: url('../img/bg-contato_1.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .secao--contato .titulo,
+    .secao--contato .subtitulo,
+    .secao--contato .texto,
+    .secao--contato .link {
+        color: var(--fundo--principal);
+    }
+
+    .secao--contato .container {
+        flex-direction: column;
+        display: flex;
+        gap: 24px;
+    }
+
+    .secao--contato .topo--contato {
+        flex-direction: column;
+        display: flex;
+        gap: 10px;
+    }
+
+    .secao--contato .headline {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+    }
+
+    .secao--contato .div--traco {
+        background-color: var(--fundo--principal);
+        border-radius: 2px;
+        width: 60px;
+        height: 6px;
+    }
+
+    .secao--contato .container--contato {
+        flex-direction: column;
+        display: flex;
+        gap: 24px;
+    }
+
+    .secao--contato .container--contato .contato {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        gap: 14px;
+    }
+
+    .secao--contato .contato span {
+        background-color: var(--cor--secundaria);
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        display: flex;
+        height: 50px;
+        width: 50px;
+    }
+
+    .secao--contato .contato .info--contato {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        gap: 6px;
+    }
+
+    .secao--contato .link--contato {
+        flex-direction: column;
+        display: flex;
+        gap: 4px;
+    }
+
+    .secao--contato .link--contato .link:hover {
+        color: var(--cor--primaria);
+    }
+
+    /* FIM DA SEÇÃO CONTATO */
+
+    /* RODAPÉ */
+    .rodape {
+        background-color: var(--cor--primaria);
+        padding: 20px 0;
+    }
+
+    .rodape .container {        
+        flex-direction: column;
+        display: flex;
+        gap: 14px;
+    }
+
+    .rodape .container--social {
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+    }
+
+    .rodape .social .link {
+        font-size: var(--font--size--subtitulo);
+        color: var(--fundo--principal);
+    }
+
+    .rodape .social .link:hover {
+        color: var(--cor--secundaria);
+    }
+
+    .rodape .creditos {
+        text-align: center;
+    }
+
+    .rodape .creditos .texto {
+        color: var(--fundo--principal);
+        font-weight: 600;
+    }
+
+    /* FIM DO RODAPÉ */
+}
+
+@media (min-width: 768px) {
+
+    :root {
+        --font--size--titulo: 32px;
+        --font--size--subtitulo: 26px;
+        --font--size--texto: 16px;
+    }
+
+
+    /* SEÇÃO CONTATO */
+    .secao--contato .container--contato {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    /* FIM DA SEÇÃO CONTATO */
+}
+
+@media (min-width: 1024px) {
+
+    /* TOPO */
+    .topo .container--menu--mobile {
+        display: none;
+    }
+
+    .topo .menu--desktop {
+        display: flex;
+    }
+
+    .topo .menu--desktop ul {
+        list-style: none;
+        display: flex;
+        gap: 20px
+    }
+    /* FIM DO TOPO */
+
+    /* SEÇÃO BANNER */
+    .secao--banner .container {
+        max-width: 100%;
+        display: flex;
+        padding: 0;
+    }
+
+    .secao--banner .banner--texto,
+    .secao--banner .banner--image {
+        height: 70vh;
+        width: 50%;
+    }
+
+    .secao--banner .banner--image {
+        background-image: url('../img/banner--direita.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+    }
+
+    /* FIM DA SEÇÃO BANNER */
+
+    /* SEÇÃO SOBRE */
+    .secao--sobre .container{
+        display: flex;
+        gap: 14px;
+    }
+
+    .secao--sobre .container--sobre--conteudo,
+    .secao--sobre .container--sobre--imagem {
+        width: 50%;
+    }
+
+    .secao--sobre .container--sobre--imagem {
+        background-image: url('../img/ingredientes--frescos.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+    }
+
+    /* FIM DA SEÇÃO SOBRE */
+
+    /* SEÇÃO CARDÁPIO */
+    .secao--cardapio .container--cardapio {
+        gap: 60px;
+    }
+
+    .secao--cardapio .salgadas--classicas,
+    .secao--cardapio .salgadas--especiais,
+    .secao--cardapio .doces {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .secao--cardapio .salgadas--classicas{
+        display: flex;
+    }
+
+    .secao--cardapio .card--pizzas--menu {
+        flex-direction: column;
+        align-items: center;
+
+        flex-shrink: 1;
+        flex-grow: 1;
+        width: 48%;
+    }
+    /* FIM DA SEÇÃO CARDÁPIO */
+
+    /* MODAL */
+
+    .secao--cardapio .card--pizzas--menu {
+        flex-direction: row;     
+        width: 100%;
+    }
+
+    .secao--cardapio .card--image {
+        width: 30%;
+    }
+
+    .secao--cardapio .card--image img{
+        width: 100%;
+    }
+
+    .secao--cardapio .card--descricao {
+        width: 50%;
+    }
+
+    .secao--cardapio .card--extra {
+        width: 20%;
+    }
+
+    /* FIM DO MODAL */
+
+    /* SEÇÃO CONTATO */
+    .secao--contato {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+
+    .secao--contato .container{
+        gap: 60px;
+    }
+
+    /* FIM DA SEÇÃO CONTATO */
+}
